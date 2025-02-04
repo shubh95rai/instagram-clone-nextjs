@@ -145,7 +145,7 @@ export async function updateProfileAction(formData: TSettingsFormSchema) {
   }
 
   const newUserData = validatedData.data;
-console.log(newUserData);
+
   await prisma.profile.upsert({
     where: {
       email: sessionEmail,

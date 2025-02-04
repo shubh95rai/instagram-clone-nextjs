@@ -38,7 +38,6 @@ export default function SettingsForm({ profile }: { profile: Profile | null }) {
       });
       const signedUrl = await uploadRequest.json();
       setAvatarUrl(signedUrl);
-      console.log(avatarUrl);
       setUploading(false);
     } catch (e) {
       console.log(e);

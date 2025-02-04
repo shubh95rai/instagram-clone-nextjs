@@ -20,7 +20,6 @@ export default async function LoggedInUserHome() {
       },
     },
   });
-  console.log(followedProfiles);
 
   return (
     <div>
