@@ -54,7 +54,7 @@ export default function SettingsForm({ profile }: { profile: Profile | null }) {
     register,
     unregister,
     handleSubmit,
-    formState: { errors, isSubmitting},
+    formState: { errors, isSubmitting },
     setError,
   } = useForm<TSettingsFormSchema>({
     resolver: zodResolver(SettingsFormSchema),
@@ -89,7 +89,7 @@ export default function SettingsForm({ profile }: { profile: Profile | null }) {
       >
         <div className="mb-4 flex items-center gap-4">
           <div>
-            <div className="size-24 rounded-full bg-gray-100 shadow-sm ring-1 ring-gray-200">
+            <div className="size-24 rounded-full bg-gray-100 shadow-sm ring-1 ring-muted-foreground">
               {avatarUrl && (
                 <Image
                   src={avatarUrl}

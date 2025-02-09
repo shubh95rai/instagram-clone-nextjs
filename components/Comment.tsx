@@ -11,7 +11,7 @@ export default function Comment({
   createdAt: Date;
 }) {
   return (
-    <div className="mt-4 flex gap-4 border-t-2 border-neutral-700 pt-4">
+    <div className="mt-4 flex gap-4 border-t border-muted-foreground pt-4">
       <div>
         <Avatar src={authorProfile?.avatar || ""} />
       </div>

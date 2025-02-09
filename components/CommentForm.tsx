@@ -26,7 +26,7 @@ export default async function CommentForm({ postId }: { postId: string }) {
           <Textarea
             name="comment"
             placeholder="Tell me what you think"
-            className="resize-none bg-white dark:bg-neutral-900"
+            className="resize-none bg-background"
           />
           <Button>Post Comment</Button>
         </div>

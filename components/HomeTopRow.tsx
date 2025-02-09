@@ -20,7 +20,7 @@ export default async function HomeTopRow({
         return (
           <div key={profile.id} className="w-24 flex-shrink-0 text-center">
             <div className="inline-block rounded-full bg-gradient-to-tr from-amber-500 to-fuchsia-600 p-1">
-              <div className="rounded-full bg-white p-1 dark:bg-neutral-900">
+              <div className="rounded-full bg-background p-1">
                 <Avatar src={profile.avatar || ""} size={"size-20"} />
               </div>
             </div>

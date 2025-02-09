@@ -21,7 +21,7 @@ export default function ProfilePageInfo({
       </TopNav>
       <section className="mt-8 flex justify-center">
         <div className="rounded-full bg-gradient-to-tr from-amber-500 to-fuchsia-600 p-2">
-          <div className="rounded-full bg-white p-2 dark:bg-neutral-900">
+          <div className="rounded-full bg-background p-2">
             <Image
               src={profile.avatar || ""}
               alt="display picture"

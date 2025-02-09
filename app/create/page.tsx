@@ -49,7 +49,7 @@ export default function CreatePage() {
       {/* <h1 className="text-center text-2xl font-bold">Create Post</h1> */}
       <TopNav>Create Post</TopNav>
       <form action={createPostAction} className="mt-8 flex flex-col gap-2">
-        <div className="relative flex aspect-square size-full items-center justify-center rounded-md bg-gray-200 p-4 dark:bg-neutral-700">
+        <div className="relative flex aspect-square size-full items-center justify-center rounded-md bg-secondary p-4">
           {imageUrl ? (
             <>
               <Image

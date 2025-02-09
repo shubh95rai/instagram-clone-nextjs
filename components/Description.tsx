@@ -24,7 +24,7 @@ export default function Description({
     setEditFlag(false);
   }
   return (
-    <div className="flex gap-4 rounded-md bg-gray-100 p-4 shadow dark:bg-neutral-800">
+    <div className="flex gap-4 rounded-md bg-secondary p-4 shadow">
       <div>
         <Avatar src={authorProfile?.avatar || ""} />
       </div>
@@ -42,7 +42,7 @@ export default function Description({
         {editFlag ? (
           <form action={handleEditDescription} className="mt-2">
             <Input
-              className="bg-neutral-900"
+              className="bg-background"
               name="description"
               value={description || ""}
               autoFocus

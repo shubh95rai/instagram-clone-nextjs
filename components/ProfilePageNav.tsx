@@ -20,7 +20,7 @@ export default function ProfilePageNav({
       <div className="flex justify-center gap-4 font-bold">
         <Link
           href={isMyProfile ? "/profile" : `/users/${username}`}
-          className={profileActive ? "text-gray-800 dark:text-neutral-100" : "text-gray-400"}
+          className={profileActive ? "text-primary" : "text-muted-foreground"}
         >
           Posts
         </Link>
@@ -29,7 +29,7 @@ export default function ProfilePageNav({
           href={
             isMyProfile ? "/profile/highlight" : `/users/${username}/highlight`
           }
-          className={highlightActive ? "text-gray-800 dark:text-neutral-100" : "text-gray-400"}
+          className={highlightActive ? "text-primary" : "text-muted-foreground"}
         >
           Highlights
         </Link>
@@ -37,7 +37,9 @@ export default function ProfilePageNav({
         {isMyProfile && (
           <Link
             href={"/profile/bookmark"}
-            className={bookmarkActive ? "text-gray-800 dark:text-neutral-100" : "text-gray-400"}
+            className={
+              bookmarkActive ? "text-primary" : "text-muted-foreground"
+            }
           >
             Bookmarks
           </Link>

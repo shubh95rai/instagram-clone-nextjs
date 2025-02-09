@@ -69,7 +69,7 @@ export default async function SinglePostContent({
     <main className="mx-auto max-w-md rounded-md pb-10 md:max-w-4xl">
       <TopNav>Post</TopNav>
       <div className="mt-8 grid items-start gap-4 md:grid-cols-2">
-        <section className="flex flex-col justify-between rounded-md bg-gray-100 p-4 shadow dark:bg-neutral-800">
+        <section className="flex flex-col justify-between rounded-md bg-secondary p-4 shadow">
           <div className="my-auto flex aspect-square size-full items-center">
             <Image
               src={post.imageUrl}
@@ -80,7 +80,7 @@ export default async function SinglePostContent({
               priority
             />
           </div>
-          <div className="mt-4 flex justify-between border-t-2 border-neutral-700 pt-4">
+          <div className="mt-4 flex justify-between border-t border-muted-foreground pt-4">
             <LikesInfo
               post={post}
               postLikes={postLikes}
@@ -97,7 +97,7 @@ export default async function SinglePostContent({
               sessionEmail={sessionEmail}
             />
 
-            <div className="rounded-md bg-gray-100 p-4 shadow dark:bg-neutral-800">
+            <div className="rounded-md bg-secondary p-4 shadow">
               <CommentForm postId={postId} />
 
               {comments.map((comment) => {

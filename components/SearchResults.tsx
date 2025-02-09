@@ -34,14 +34,14 @@ export default async function SearchResults({ query = "" }: { query: string }) {
               <Link
                 href={`/users/${profile.username}`}
                 key={profile.id}
-                className="flex gap-2 rounded-full bg-gray-200 p-2 dark:bg-neutral-800"
+                className="flex gap-2 rounded-full bg-muted p-2"
               >
                 <div className="flex-shrink-0">
                   <Avatar src={profile.avatar || ""} />
                 </div>
                 <div className="truncate">
                   <p className="truncate">{profile.name}</p>
-                  <p className="text-sm text-gray-500">@{profile.username}</p>
+                  <p className="text-sm text-muted-foreground">@{profile.username}</p>
                 </div>
               </Link>
             );

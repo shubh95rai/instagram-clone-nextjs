@@ -87,7 +87,7 @@ export default function HomePostsContent({
           return (
             <div
               key={post.id}
-              className="mx-auto flex max-w-lg flex-col justify-between gap-4 rounded-md bg-gray-100 p-4 shadow dark:bg-neutral-800"
+              className="mx-auto flex max-w-lg flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow"
             >
               <section className="*:flex *:items-center *:gap-2">
                 <Link href={`/users/${profile?.username}`}>
@@ -109,7 +109,7 @@ export default function HomePostsContent({
                 </Link>
               </section>
 
-              <section className="flex justify-between border-t-2 border-neutral-700 pt-4">
+              <section className="flex justify-between border-t border-muted-foreground pt-4">
                 <LikesInfo
                   post={post}
                   postLikes={originalPost.likes.length}

@@ -7,7 +7,7 @@ import { GoPerson } from "react-icons/go";
 
 export default function MobileNav() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white px-8 py-4 lg:hidden border-t-2 dark:bg-neutral-900">
+    <nav className="fixed bottom-0 left-0 right-0 border-t-2 bg-background px-8 py-4 lg:hidden">
       <div className="mx-auto flex max-w-lg justify-between">
         <Link href="/">
           <GoHome className="size-7" />
